@@ -1,0 +1,222 @@
+html, body {
+        background-image: url("IMG_002.png");
+        background-size: 300px;
+        background-color:grey;
+        background-repeat: round;
+        background-attachment: fixed;  
+        margin: 20px; 
+        overflow-wrap: break-word;           
+}
+
+main {
+    background-color:aliceblue;
+    width: 80%;
+    margin: auto;
+    text-align: center; 
+}
+
+header {
+    background-color: teal;
+    min-height: 60px; 
+    text-align: center;
+}
+
+nav {
+    padding: 10px;
+    text-align: right;
+}
+
+a {
+    background: rgb(172, 0, 43);
+    color:rgb(10, 10, 10);
+    text-align: center;
+    margin: 20px;
+    display: inline-block;
+    height: 40px;
+    width: 100px; 
+    font-size: 18px;  
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid white;
+    font-weight: bold;
+    font-family: tahoma;
+}
+
+h1 {
+    color: seashell;
+    font-size: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 20px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 50%;
+    padding-bottom: 2%;
+}
+
+h2 {
+    background-color: rgb(78, 1, 1);
+    color: white;
+    border:black 1px solid;
+    font-size: 40px;
+    padding: 10px;
+}
+
+footer {
+    background-color: teal;
+    min-height: 60px;
+    text-align: center;
+}
+
+h3 {
+    color: rgb(29, 29, 190);
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+h4 {
+    color: darkmagenta;
+    font-style: italic;
+    font-size: 20px;
+}
+
+h5 {
+    padding-top: 2%;
+    color:rgb(40, 41, 39);
+    font-style: oblique;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+h6 {
+    color: seashell;
+    font-size: 30px;
+    padding: 20px;
+}
+
+address {
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    color: rgb(0, 37, 85)
+}
+
+#copyright {
+    color: black;
+    font-size: 15px;
+    font-family: cursive;
+}
+
+#content {
+    min-height: 500px;
+}
+
+.codeExample {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: cyan;
+}
+
+#social {
+  margin: 20px 10px;
+}
+
+.smGlobalBtn { 
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border:2px solid #ddd;
+    box-shadow: 0 3px 3px #999;
+    padding: 0px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 27px;
+    -moz-border-radius:27px;
+    -webkit-border-radius:27px;
+}
+
+.facebookBtn{
+    background: #4060A5;
+}
+
+.facebookBtn:before { 
+    font-family: "FontAwesome";
+    content: "\f09a"; 
+}
+
+.facebookBtn:hover {
+    color: #4060A5;
+    background: #fff;
+    border-color: #4060A5;
+}
+
+.twitterBtn {
+    background: #00ABE3;
+}
+
+.twitterBtn:before {
+      font-family: "FontAwesome";
+      content: "\f099"; 
+}
+
+.twitterBtn:hover {
+      color: #00ABE3;
+      background: #fff;
+      border-color: #00ABE3;
+}
+
+.linkedinBtn {
+    background: #0094BC;
+}
+
+.linkedinBtn:before {
+      font-family: "FontAwesome";
+      content: "\f0e1"; 
+}
+
+.linkedinBtn:hover {
+      color: #0094BC;
+      background: #fff;
+      border-color: #0094BC;
+}
+
+.tumblrBtn {
+    background: #3a5876;
+}
+
+.tumblrBtn:before {
+      font-family: "FontAwesome";
+      content: "\f173"; 
+}
+
+.tumblrBtn:hover {
+      color: #3a5876;
+      background: #fff;
+      border-color: #3a5876;
+}
+
+.rssBtn {
+    background: #e88845;
+}
+
+.rssBtn:before {
+      font-family: "FontAwesome";
+      content: "\f09e"; 
+}
+
+.rssBtn:hover {
+      color: #e88845;
+      background: #fff;
+      border-color: #e88845;
+}

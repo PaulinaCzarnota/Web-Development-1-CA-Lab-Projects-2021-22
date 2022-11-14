@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Learn CSS</title>
+        <link href="site.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div id="content">
+        <main>
+            <header>
+                <h1>Paulina's CSS Site</h1>
+
+            <hr>
+
+                <nav> 
+                    <a href="index.html">Home</a> 
+                    <a href="https://www.w3schools.com/css/">About CSS</a> 
+                    <a href="https://www.liveagent.com/directory/w3schools-help-desk-contacts/">Contact</a> 
+                </nav>
+            </header>
+
+            <section>
+                <h2>ALL ABOUT CSS</h2>
+
+                <img src="IMG_001.webp" alt="CSS Logo">
+
+                <h3>What is CSS and why is it important?</h3>
+
+                <p>CSS stands for Cascading Style Sheets. It is the coding language that gives a website its look and layout. Along with HTML, CSS is fundamental to web design. Without it, websites would still be plain text on white backgrounds.</p>
+                <p>Before the development of CSS in 1996 by the World Wide Web Consortium (W3C), Web pages were extremely limited in both form and function. Early browsers presented a page as hypertext - plain text, images and links to other hypertext pages. There was no layout at all to speak of, merely paragraphs running across the page in a single column.</p>
+                <p>CSS allowed several innovations to webpage layout, such as the ability to:</p>
+                <p>
+                    <ul>
+                        <li>Specify fonts other than the default for the browser</li>
+                        <li>Specify color and size of text and links</li>
+                        <li>Apply colors to backgrounds</li>
+                        <li>Contain webpage elements in boxes and float those boxes to specific positions on the page</li>
+                    </ul>
+                </p>
+            </section>
+
+            <section>
+                <h3>How does CSS actually work?</h3>
+
+                <p>
+                    <ol>
+                        <li>The browser loads the HTML (e.g. receives it from the network).</li>
+                        <li>It converts the HTML into a DOM (Document Object Model). The DOM represents the document in the computer's memory. The DOM is explained in a bit more detail in the next section.</li>
+                        <li>The browser then fetches most of the resources that are linked to by the HTML document, such as embedded images and videos ... and linked CSS! JavaScript is handled a bit later on in the process, and we won't talk about it here to keep things simpler.</li>
+                        <li>The browser parses the fetched CSS, and sorts the different rules by their selector types into different "buckets", e.g. element, class, ID, and so on. Based on the selectors it finds, it works out which rules should be applied to which nodes in the DOM, and attaches style to them as required (this intermediate step is called a render tree).</li>
+                        <li>The render tree is laid out in the structure it should appear in after the rules have been applied to it.</li>
+                        <li>The visual display of the page is shown on the screen (this stage is called painting).</li>
+                    </ol>
+                </p>
+            </section>
+            
+            <section>
+                <h3>The main advantages of CSS include:</h3>
+
+                <p>
+                    <ol>
+                        <li>By styling the page using external CSS this will result in 
+                            smaller HTML files.</li>
+                        <li>If there are multiple occurrences of the came HTML 
+                            structures on the page, one CSS rule can style an 
+                            element each time it occurs.</li>
+                        <li>It also enables you to make changes to the CSS file 
+                            that will propagate to all web pages styles by this CSS 
+                            file.</li>
+                    </ol>
+                </p>
+            </section>
+
+            <hr>
+
+            <section>
+                <h3>Example 1 - Styling a Paragraph</h3>
+
+                <h4>This is a CodePen example of how to style a paragraph.</h4>
+                    
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="RwZKvaq" data-user="paulinaczarnota_tud" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/paulinaczarnota_tud/pen/RwZKvaq">
+                        1. Styling a Paragraph</a> by Paulina Czarnota (<a href="https://codepen.io/paulinaczarnota_tud">@paulinaczarnota_tud</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                    
+                <p class="codeExample">The CSS color property defines the text color to be used.</p>
+                <p class="codeExample">The CSS font-size property defines the text size to be used.</p>
+            </section>
+            
+            <hr>
+
+            <section>
+                <h3>Example 2 - Styling a Heading</h3>
+
+                <h4>This is a CodePen example of how to style a heading.</h4>
+
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="JjyExWL" data-user="paulinaczarnota_tud" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/paulinaczarnota_tud/pen/JjyExWL">
+                        2. Styling a Heading</a> by Paulina Czarnota (<a href="https://codepen.io/paulinaczarnota_tud">@paulinaczarnota_tud</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <p class="codeExample">A heading element implies all the font changes, paragraph breaks before and after, and any white space necessary to render the heading.</p> 
+                <p class="codeExample">The heading elements are H1, H2, H3, H4, H5, and H6 with H1 being the highest (or most important) level and H6 the least.</p>          
+            </section>
+
+            <hr>
+
+            <section>
+                <h3>Example 3 - CSS Colour: Names</h3>
+
+                <h4>This is a CodePen example of how to style background colour of text.</h4>
+
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xxLgMPj" data-user="paulinaczarnota_tud" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/paulinaczarnota_tud/pen/xxLgMPj">
+                        3. CSS Colour: Names</a> by Paulina Czarnota (<a href="https://codepen.io/paulinaczarnota_tud">@paulinaczarnota_tud</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                    
+                <p class="codeExample">To style an element's colour, the colour can be set using a name.</p>
+                <p class="codeExample">Example of names: red, green, blue, black, white, yellow, etc...</p>
+            </section>
+
+            <hr>
+
+            <secton>
+                <h3>Example 4 - CSS Colour: RGB</h3>
+
+                <h4>This is a CodePen example of how to style background colour of text.</h4>
+
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QWMdYQE" data-user="paulinaczarnota_tud" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/paulinaczarnota_tud/pen/QWMdYQE">
+                        4. CSS Colour: RGB </a> by Paulina Czarnota (<a href="https://codepen.io/paulinaczarnota_tud">@paulinaczarnota_tud</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <p class="codeExample">To style an element's colour, the colour can be set using a RGB value.</p>
+                <p class="codeExample">GB color values can be specified using: rgb(red, green, blue).</p>
+                <p class="codeExample">Each parameter (red, green, blue) defines the intensity of the color between 0 and 255.</p>
+            </secton>
+
+            <hr>
+
+            <section>
+                <h3>Example 5 - CSS Colour: HEX</h3>
+
+                <h4>This is a CodePen example of how to style background colour of text.</h4>
+
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="KKvaJxW" data-user="paulinaczarnota_tud" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/paulinaczarnota_tud/pen/KKvaJxW">
+                        5. CSS Colour: HEX</a> by Paulina Czarnota (<a href="https://codepen.io/paulinaczarnota_tud">@paulinaczarnota_tud</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <p class="codeExample">RGB colours can be set as HEX values too: #RRGGBB</p>
+                <p class="codeExample">Each parameter RRGGBB defines the intensity of the color between 0 and F (Hexadecimal values).</p>
+            </section>
+                
+            <hr>
+
+            <section>
+                <h3>Example 6 - CSS Selectors</h3>
+
+                <h4>This is a CodePen example of how to use CSS Selectors.</h4>
+
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QWMdYZG" data-user="paulinaczarnota_tud" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/paulinaczarnota_tud/pen/QWMdYZG">
+                        6. CSS Selectors</a> by Paulina Czarnota (<a href="https://codepen.io/paulinaczarnota_tud">@paulinaczarnota_tud</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <p class="codeExample">The most basic selector to use is the element name.</p>
+                <p class="codeExample">This will style the content of every occurrence of this element using the one style rule.</p>
+                <p class="codeExample">The example above will create a rule to style every paragraph on a page.</p>
+            </section>
+
+            <hr>
+
+            <section>
+                <h3>Example 7 - Id Selector</h3>
+
+                <h4>This is a CodePen example of how to use Id Selector.</h4>
+
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="PoKWVXq" data-user="paulinaczarnota_tud" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/paulinaczarnota_tud/pen/PoKWVXq">
+                        7. Id Selector</a> by Paulina Czarnota (<a href="https://codepen.io/paulinaczarnota_tud">@paulinaczarnota_tud</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <p class="codeExample">The id selector can be added to an element so that the element can be uniquely identified on a page. An attribute called id is added to the elements opening tag and is given a meaningful name. For a given page, there should only be one element with a given name on the page.</p>
+                <p class="codeExample">When an element has been given an id attribute a CSS rule can be written for this. The name given to the id must be unique to the page.</p>
+                <p class="codeExample">In the stylesheet, a hash symbol (#) must be added before the ID when you use it in a selector. (ie. Creating the CSS rule)</p>
+            </section>
+
+            <hr>
+
+            <section>
+                <h3>Example 8 - Class Selector</h3>
+
+                <h4>This is a CodePen example of how to use Class Selector.</h4>
+
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="rNzjPPJ" data-user="paulinaczarnota_tud" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/paulinaczarnota_tud/pen/rNzjPPJ">
+                        8. Class Selector</a> by Paulina Czarnota (<a href="https://codepen.io/paulinaczarnota_tud">@paulinaczarnota_tud</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <p class="codeExample">When an element has been given a class attribute a CSS rule can be written for this. The name given to the class does not have to be unique to the page. There can be multiple elements with the same class attribute on the same page. This can be used to style multiple occurrences of the same element on the page (eg. Multiple headings or paragraphs)</p>
+                <p class="codeExample">In the stylesheet, a period symbol ( . ) must be added before the Class when you use it in a selector. (ie. Creating the CSS rule)</p>
+            </section>
+
+            <hr>
+
+            <section>
+                <h3>Example 9 - Centering a Container</h3>
+
+                <h4>This is a CodePen example of how to center a container.</h4>
+
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="JjyExze" data-user="paulinaczarnota_tud" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/paulinaczarnota_tud/pen/JjyExze">
+                        9. Centering a Container</a> by Paulina Czarnota (<a href="https://codepen.io/paulinaczarnota_tud">@paulinaczarnota_tud</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <p class="codeExample">Add a div to the body section, set the width and center the container in the browser window.</p>
+                <p class="codeExample">This centers the element - margin: auto;</p>
+            </section>
+
+            <hr>
+
+            <section>
+                <h3>Example 10 - Centering text in a container</h3>
+
+                <h4>This is a CodePen example of how to center text in a container.</h4>
+
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="BadpMeK" data-user="paulinaczarnota_tud" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/paulinaczarnota_tud/pen/BadpMeK">
+                        10. Centering text in a container</a> by Paulina Czarnota (<a href="https://codepen.io/paulinaczarnota_tud">@paulinaczarnota_tud</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <p class="codeExample">For a container that holds text, it is possible to align the text.</p>
+                <p class="codeExample">If we wanted to center the text in a container, the following rule should be used: text-align: center;</p>
+            </section>
+
+            <hr>
+
+            <section>
+                <h3>Example 11 - Background-color</h3>
+
+                <h4>This is a CodePen example of how to use background-color.</h4>
+
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ZEJLwgr" data-user="paulinaczarnota_tud" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/paulinaczarnota_tud/pen/ZEJLwgr">
+                        11. Background-color</a> by Paulina Czarnota (<a href="https://codepen.io/paulinaczarnota_tud">@paulinaczarnota_tud</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                    
+                <p class="codeExample">The background-color property sets the background color of an element.</p>
+            </section>
+                
+            <hr>
+
+            <section>
+                <h3>Example 12 - Background-image</h3>
+
+                <h4>This is a CodePen example of how to use background-image.</h4>
+
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWvJxWr" data-user="paulinaczarnota_tud" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/paulinaczarnota_tud/pen/MWvJxWr">
+                        12. Background-image</a> by Paulina Czarnota (<a href="https://codepen.io/paulinaczarnota_tud">@paulinaczarnota_tud</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                    
+                <p class="codeExample">The background-image property sets one or more background images for an element.</p>
+            </section>
+
+            <hr>
+
+            <section>
+                <h3>Example 13 - Colour</h3>
+
+                <h4>This is a CodePen example of how to use colour.</h4>
+                    
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWvJxyV" data-user="paulinaczarnota_tud" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/paulinaczarnota_tud/pen/MWvJxyV">
+                        13. Colour </a> by Paulina Czarnota (<a href="https://codepen.io/paulinaczarnota_tud">@paulinaczarnota_tud</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                    
+                <p class="codeExample">Colour can be added to style backgrounds, text and borders for elements.</p>
+            </section>
+
+            <hr>
+
+            <section>
+                <h3>Example 14 - CSS Text: Text Alignment</h3>
+
+                <h4>This is a CodePen example of how to use text alignment.</h4>
+                    
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="mdMRoRV" data-user="paulinaczarnota_tud" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/paulinaczarnota_tud/pen/mdMRoRV">
+                        14. CSS Text: Text Alignment </a> by Paulina Czarnota (<a href="https://codepen.io/paulinaczarnota_tud">@paulinaczarnota_tud</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                    
+                <p class="codeExample">The text-align property specifies the horizontal alignment of text in an element.</p>
+            </section>
+
+            <hr>
+
+            <section>
+                <h3>Example 15 - CSS Text: Text Decoration</h3>
+
+                <h4>This is a CodePen example of how to use text decoration.</h4>
+                    
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="qBXRvXe" data-user="paulinaczarnota_tud" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/paulinaczarnota_tud/pen/qBXRvXe">
+                        15. CSS Text: Text Decoration</a> by Paulina Czarnota (<a href="https://codepen.io/paulinaczarnota_tud">@paulinaczarnota_tud</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <p class="codeExample"> The text-decoration property specifies the decoration added to text.</p> 
+            </section>
+
+            <hr>
+
+            <section>
+                <h3>Example 16 - CSS Fonts</h3>
+
+                <h4>This is a CodePen example of how to use CSS fonts.</h4>
+
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WNERmXX" data-user="paulinaczarnota_tud" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/paulinaczarnota_tud/pen/WNERmXX">
+                        16. CSS Fonts</a> by Paulina Czarnota (<a href="https://codepen.io/paulinaczarnota_tud">@paulinaczarnota_tud</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <p class="codeExample">In CSS, we use the font-family property to specify the font of a text.</p>
+                <p class="codeExample">The font-family property should hold several font names as a "fallback" system, to ensure maximum compatibility between browsers.</p> 
+                <p class="codeExample">Start with the font you want, and end with a generic family.</p>
+                <p class="codeExample">The font names should be separated with comma.</p>
+            </section>
+
+            <hr>
+
+            <section>
+                <h3>Example 17 - Styling Links</h3>
+
+                <h4>This is a CodePen example of how to use styling links.</h4>
+
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VwzPRxe" data-user="paulinaczarnota_tud" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/paulinaczarnota_tud/pen/VwzPRxe">
+                        17. Styling Links </a> by Paulina Czarnota (<a href="https://codepen.io/paulinaczarnota_tud">@paulinaczarnota_tud</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <p class="codeExample">The :link selector is used to select unvisited links.</p>
+                <p class="codeExample">The :link selector does not style links you have already visited.</p>   
+                <p class="codeExample">The :visited selector is to style links to visited pages, the :hover selector ia to style links when you mouse over them, and the :active selector ia to style links when you click on them.</p>     
+            </section>
+
+            <hr>
+
+            <section>
+                <h3>Example 18 - Inline Blocks - Old way using float</h3>
+
+                <h4>This is a CodePen example of how to use inline blocks in old way using float.</h4>
+
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VwzPRBe" data-user="paulinaczarnota_tud" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/paulinaczarnota_tud/pen/VwzPRBe">
+                        18. Inline Blocks - Old way using float </a> by Paulina Czarnota (<a href="https://codepen.io/paulinaczarnota_tud">@paulinaczarnota_tud</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <p class="codeExample">Use floats — when you need other elements to flow around an element, support older versions of IE, or don’t want to deal with the horizontal whitespace issue.</p>
+            </section>
+
+            <hr>
+
+            <section>
+                <h3>Example 19 - Inline Blocks – New Way</h3>
+
+                <h4>This is a CodePen example of how to use inline blocks in new way.</h4>
+
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dyzNrgG" data-user="paulinaczarnota_tud" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/paulinaczarnota_tud/pen/dyzNrgG">
+                        19. Inline Blocks – New Way</a> by Paulina Czarnota (<a href="https://codepen.io/paulinaczarnota_tud">@paulinaczarnota_tud</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <p class="codeExample">Use inline-blocks — when you need more control over the vertical alignment or horizontal positioning of elements.</p>
+            </section>
+
+            <hr>
+
+            <section>
+                <h3>Example 20 - Setting the width and height of an iFrame</h3>
+
+                <h4>This is a CodePen example of how to set the width and height of an iframe.</h4>
+
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QWMdoJr" data-user="paulinaczarnota_tud" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/paulinaczarnota_tud/pen/QWMdoJr">
+                        20. Setting the width and height of an iFrame</a> by Paulina Czarnota (<a href="https://codepen.io/paulinaczarnota_tud">@paulinaczarnota_tud</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <p class="codeExample">By using iframe tag, you can display another webpage content into a HTML page document in a rectangular shape structure.</p> 
+                <p class="codeExample">You can use external CSS for the iframe, that is making use of external CSS file.</p>
+                <p class="codeExample">Create a different file for the CSS code and include it in the HTML file using link and href tag before the iframe tag.</p>     
+            </section>       
+
+        </div>
+
+            <footer>
+                <h5>Thank you for visiting my site!</h5>
+
+                <h6>Site design by Paulina Czarnota</h6>
+                 
+            <hr>
+
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                <div id="social">
+                    <a class="facebookBtn smGlobalBtn" href="https://www.facebook.com/w3schoolscom"></a>
+                    <a class="twitterBtn smGlobalBtn" href="https://twitter.com/w3schoolsonline?lang=pl"></a>
+                    <a class="linkedinBtn smGlobalBtn" href="https://www.linkedin.com/company/w3schools.com/"></a>
+                    <a class="tumblrBtn smGlobalBtn" href="https://w3school-blog.tumblr.com/"></a> 
+                </div>
+            
+            <hr>
+
+            <address>
+                Visit us at: Grangegorman Lower, Dublin 7<br>
+                Telephone: (01) 220 5000<br>
+                Email: itsupport.city@tudublin.ie<br>
+            </address>
+        
+                <h6 id="copyright">&copy; 2021 All Rights Reserved. WebDev.ie ®</h6>
+            </footer>
+
+        </main>
+    </body>
+
+</html>
