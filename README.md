@@ -1,4 +1,4 @@
-This is a collection of some of my Web Development 1 lab projects completed in the first year of Computer Science (TU856) at TU Dublin.
+This is a collection of some of my Web Development 1 lab projects completed in the first year of Computer Science at TU Dublin.
 
 Lab 3 (Short History of the Web Website) - Grade received: 100%
 
